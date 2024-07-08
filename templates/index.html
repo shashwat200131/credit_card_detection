@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Card Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Credit Card Detection</h1>
+        <form id="card-form">
+            <label for="card-number">Enter Credit Card Number:</label>
+            <input type="text" id="card-number" name="card-number" required>
+            <button type="submit">Validate</button>
+        </form>
+        <p id="result"></p>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
